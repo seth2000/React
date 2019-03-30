@@ -1,0 +1,13 @@
+1. Install the  Node.js from https://nodejs.org/en/download/
+2. Run CMD , npm install -g create-react-app 
+3. create-react-app my-app // name is always be low case.
+4. Start Visual Code, open the fold my-app created as above.
+     Remember install Beautify and Simple React Snippets extensions in VS Code.
+
+5. start the web server: 
+    cd my-app
+    npm start
+
+
+6. Use Chrome open http://localhost:3000/
+    Remember install the React Developer tool from Chrome Web Store
