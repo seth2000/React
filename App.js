@@ -21,15 +21,16 @@ class App extends Component {
   };
 
   
-  decreaseTheNumber = () => {
+  decreaseTheNumber = (aint) => {
     this.setState((state)=> ({ 
-      sRow1: state.sRow1 - 2
+      sRow1: state.sRow1 - aint
     }));
   };
 
   render() {
     console.log(this.helloWorld);
     var theSecondRow = <span>this is the second row</span>;
+    var aint = 2
     return (
       <div className="App">
         <header className="App-header">
@@ -38,7 +39,7 @@ class App extends Component {
           {theSecondRow}
           {this.state.sRow1} + {this.state.sRow2} = {this.state.sRow1 + this.state.sRow2}
           <button onClick={this.addTheNumber}>Add Number Up by 1</button>
-          <button onClick={this.decreaseTheNumber}>Decrease Number down by 2</button>
+          <button onClick={this.decreaseTheNumber.bind(this, aint)}>Decrease Number down by {aint}</button>
         </header>
 
         
